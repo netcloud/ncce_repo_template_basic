@@ -1,0 +1,33 @@
+# Ignore terraform related files
+.terraform/*
+**/.terraform/*
+**/.tfsec/*
+*.tfplan
+*.tfstate
+*.tfstate.*
+*.backup
+
+# Ignore python compile files
+**/*.pyc
+
+# Ignore lock files
+*.lock*
+
+# Ignore zip files for lambda
+**/*.zip
+
+# Ignore layer helper folders for lambda module generated layers
+**/.layer/*
+!**/.layer/.gitkeep
+
+# Ignore IDE related files
+.vscode/*
+
+# Ignore auto-generated files for pre-commit
+**/aliased-providers.tf.json
+
+# Ignore temp folder
+temp/*
+
+# Ignore Mac files
+*/.DS_Store
